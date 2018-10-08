@@ -7,6 +7,8 @@ Connect Flash to Patreon and reward your patreons.
 2- Copy the login button to your Animate CC(Library)
 3- connect using Patreon.login( your_patreon_client_id_here );
 
+If you don't know where to get your client_id, go here: https://www.patreon.com/portal
+
 # How to use properly
 If you just use the Patreon.login(client_id) function, it would be enough.
 Now, let's say you want to get the information once connected. Here is a sample code:
