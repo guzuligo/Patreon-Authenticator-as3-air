@@ -28,4 +28,4 @@ function connected(){
 }
 
 # Functions and Variables
-<b>Patreon.email</b>:String this contains the patreon e-mail once connected. Otherwise, it is ""
+<h2>Patreon.email:String</h2> this contains the patreon e-mail once connected. Otherwise, it is ""
