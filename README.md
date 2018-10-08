@@ -28,10 +28,26 @@ function connected(){
 }
 
 # Functions
+<h3>Patreon.login(client_id)</h3>
+Connects to patreon and gets the current user
+<h3>Patreon.logout()</h3>
+Altough it is meant for logging out, it is also used to cancel the login, especially if user didn't press on allow.
+<h3>Patreon.hasReward(reward_title)</h3>
+Returns true if the user is eligable for the reward specified.
 
 # Functions and Variables
 <h3>Patreon.email:String</h3> 
 this contains the patreon e-mail once connected. Otherwise, it is ""
 <h3>Patreon.rewards:Vector.<PatReward></h3>
-Contains information about the rewards.
-  Patreon.rewards[0].
+Contains and array (Vector) information about the rewards. 
+  Patreon.rewards[0].id             //reward 0 id
+  Patreon.rewards[0].amount_cents   //How much payed in cents
+  Patreon.rewards[0].description    //reward 0 description
+  Patreon.rewards[0].title          //reward 0 title
+  
+  In general, here is the verification code:
+  public var id:String;
+	public var amount:Number,amount_cents:Number;
+	public var description:String,title:String;
+	public var user_limit:int,patron_count:int,post_count:int,remaining:int;
+  
