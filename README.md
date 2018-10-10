@@ -15,19 +15,19 @@ Now, let's say you want to get the information once connected. Here is a sample 
 
 <h3>//Step 1: Use onStatus to know when you are connected</h3>
 
-Patreon.onStatus = function (stat){
-  if (stat==-1) trace("ERROR");
-  if (stat== 1) connected();
-}
+Patreon.onStatus = function (stat){<br>
+  if (stat==-1) trace("ERROR");<br>
+  if (stat== 1) connected();<br>
+}<br>
 
 <h3>//Step 2: Connect</h3>
 Patreon.login(client_id_here);
 
 <h3>//Step 3: Get the information once connected</h3>
-function connected(){
-  trace("User E-Mail"   +  Patreon.email);
-  trace("Is rewarded with cool thing" + Patreon.hasReward("cool thing"));
-}
+function connected(){<br>
+  trace("User E-Mail"   +  Patreon.email);<br>
+  trace("Is rewarded with cool thing" + Patreon.hasReward("cool thing"));<br>
+}<br>
 
 # Functions
 <h3>Patreon.login(client_id)</h3>
