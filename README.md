@@ -49,7 +49,7 @@ Contains and array (Vector) information about the rewards.
   
   In general, here is the verification code:<br>
   public var id:String;<br>
-	public var amount:Number,amount_cents:Number;<br>
+	public var amount_cents:Number;<br>
 	public var description:String,title:String;<br>
 	public var user_limit:int,patron_count:int,post_count:int,remaining:int;<br>
   
