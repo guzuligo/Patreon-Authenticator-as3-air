@@ -3,15 +3,15 @@ Connect Flash to Patreon and reward your patreons.
 (FLA file works on Animate CC only)
 
 # How to get started
-1- Download Patreon.fla file
-2- Copy the login button to your Animate CC(Library)
-3- connect using Patreon.login( your_patreon_client_id_here );
+<br>1- Download Patreon.fla file
+<br>2- Copy the login button to your Animate CC(Library)
+<br>3- connect using Patreon.login( your_patreon_client_id_here );
 
 If you don't know where to get your client_id, go here: https://www.patreon.com/portal
 
 # How to use properly
 If you just use the Patreon.login(client_id) function, it would be enough.
-Now, let's say you want to get the information once connected. Here is a sample code:
+<br>Now, let's say you want to get the information once connected. Here is a sample code:
 
 <h3>//Step 1: Use onStatus to know when you are connected</h3>
 
@@ -21,7 +21,7 @@ Patreon.onStatus = function (stat){<br>
 }<br>
 
 <h3>//Step 2: Connect</h3>
-Patreon.login(client_id_here);
+Patreon.login(client_id_here);<br><br>
 
 <h3>//Step 3: Get the information once connected</h3>
 function connected(){<br>
@@ -42,14 +42,14 @@ Returns true if the user is eligable for the reward specified.
 this contains the patreon e-mail once connected. Otherwise, it is null.
 <h3>Patreon.rewards:Vector. < PatReward > </h3>
 Contains and array (Vector) information about the rewards. 
-  Patreon.rewards[0].id             //reward 0 id
-  Patreon.rewards[0].amount_cents   //How much payed in cents
-  Patreon.rewards[0].description    //reward 0 description
-  Patreon.rewards[0].title          //reward 0 title
+  <br>Patreon.rewards[0].id             //reward 0 id
+  <br>Patreon.rewards[0].amount_cents   //How much payed in cents
+  <br>Patreon.rewards[0].description    //reward 0 description
+  <br>Patreon.rewards[0].title          //reward 0 title
   
-  In general, here is the verification code:
-  public var id:String;
-	public var amount:Number,amount_cents:Number;
-	public var description:String,title:String;
-	public var user_limit:int,patron_count:int,post_count:int,remaining:int;
+  In general, here is the verification code:<br>
+  public var id:String;<br>
+	public var amount:Number,amount_cents:Number;<br>
+	public var description:String,title:String;<br>
+	public var user_limit:int,patron_count:int,post_count:int,remaining:int;<br>
   
