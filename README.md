@@ -39,7 +39,7 @@ Returns true if the user is eligable for the reward specified.
 
 # Functions and Variables
 <h3>Patreon.email:String</h3> 
-this contains the patreon e-mail once connected. Otherwise, it is ""
+this contains the patreon e-mail once connected.
 <h3>Patreon.rewards:Vector. < PatReward > </h3>
 Contains and array (Vector) information about the rewards. 
   Patreon.rewards[0].id             //reward 0 id
